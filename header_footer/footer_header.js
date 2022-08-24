@@ -107,9 +107,10 @@ let header=()=>{
         </div>
         <div id="navs">
             <button id="red" class="navEle" onclick="dropDown('Sale')" onmouseover="dropDown('Sale')">Sale</button>
-            <button class="navEle" onclick="dropDown('Women')" onmouseover="dropDown('Women')">Women</button>
-            <button class="navEle" onclick="dropDown('Men')" onmouseover="dropDown('Men')">Men</button>
-            <button class="navEle" onclick="dropDown('Kids')" onmouseover="dropDown('Kids')">Kids</button>
+            <button id="Womens_data" class="navEle" onclick="dropDown('Women')" onmouseover="dropDown('Women')">Women</button>
+
+            <button  id="mens_data" class="navEle" onclick="dropDown('Men')" onmouseover="dropDown('Men')">Men</button>
+            <button  id="kids_data" class="navEle" onclick="dropDown('Kids')" onmouseover="dropDown('Kids')">Kids</button>
             <button class="navEle" onclick="dropDown('YoungAdult')"
                 onmouseover="dropDown('YoungAdult')">YoungAdult</button>
             <button class="navEle" onclick="dropDown('Activewear')"
