@@ -452,7 +452,9 @@ function display(data) {
 
   data.men.forEach(({ image, title, des, price }) => {
     let div = document.createElement("div");
+
     div.setAttribute("class", "card");
+
     let img = document.createElement("img");
     img.src = image;
 
