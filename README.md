@@ -4,7 +4,7 @@
 ## We are a team of 5 members making clone of  https://www.nordstrom.com/ under construct week of Unit - 3 in MASAI FULLSTACK WEB DEVELOPMENT COURSE.
 
  
-                                                         "About Project"
+                                                 "About Project"
                                                          
                                                          
 ## What we have to do in this project :-
