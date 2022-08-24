@@ -1,2 +1,4 @@
 # red-sail-4113
-Construct Week Project Of Advanced JS (JS-201) in MASAI FSD Course.
+
+
+## We are a team of 5 members making clone of  https://www.nordstrom.com/ under construct week of Unit - 3 in MASAI FSD Course.
