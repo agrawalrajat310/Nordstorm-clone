@@ -1,5 +1,5 @@
-function footer(){
-    return `<div class="footer">
+function footer() {
+  return `<div class="footer">
     <div class="footer-column">
         
         <ul class="lo">
@@ -87,6 +87,6 @@ function footer(){
     <p>Terms &amp; Conditions</p>
     <p>Intrest Based Ads</p>
     <p>&copy;2022 Nordstrom,Inc</p>
-</div>`
+</div>`;
 }
-export {footer}
+export { footer };
