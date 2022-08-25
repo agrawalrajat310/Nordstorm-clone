@@ -103,7 +103,7 @@ let header=()=>{
 <div id="nav-bar" onmouseenter="removeBar()">
     <div id="inside-div">
         <div id="logo">
-            <a style="width: 15%;" href="header.html"><img style="width:100px" src="./images/logo.png"></a>
+            <a style="width: 15%;" href="header.html"><img style="width:100px" src="https://logos-marques.com/wp-content/uploads/2020/09/Nordstrom-logo.png"></a>
         </div>
         <div id="navs">
             <button id="red" class="navEle" onclick="dropDown('Sale')" onmouseover="dropDown('Sale')">Sale</button>
