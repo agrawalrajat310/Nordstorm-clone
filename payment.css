@@ -1,0 +1,161 @@
+
+ .down_text p{
+    /* border: 1px red solid; */
+    color:#999;
+    width: 36%;
+    margin: auto;
+    margin-top: 20px;
+    /* margin-bottom: 800px; */
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+    
+ }
+
+ body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f4f4f4;
+ }
+
+
+ 
+ .upper_text>span:hover{
+     cursor: pointer;
+     /* border-bottom: 1px solid #666 ; */
+ }
+ .upper_text>span{
+     margin-right: 5px;
+     
+ }
+ .upper_text{
+     padding-top: 50px;
+    width: 100%;
+ 
+    /* border: 1px red solid; */
+     color:#666;
+   text-align: center;
+     
+ }
+
+
+
+
+
+
+
+
+
+ .hexc{
+    overflow: auto;
+        height: 650px;
+        border: 1px #f5f5f5 solid;
+     
+    }
+.hexcc{
+
+    height: 200px;
+    /* border: 1px saddlebrown solid ; */
+}
+*{padding:0; margin:0; box-sizing: border-box;  
+    }
+header{
+	width: 100vw;
+	min-height: 100vh;
+	background: #34495e;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	margin: auto;
+	margin-top: 50px;
+	background: white;
+	max-width: 800px;
+	min-height: 500px;
+	display: flex;
+	justify-content:space-between;
+	align-items: flex-start;
+	padding: 0.5rem 1.5rem;
+}
+.left{
+    
+	flex-basis: 50%;
+}
+.right{
+	flex-basis: 50%;
+}
+form{
+	padding: 1rem;
+}
+
+h3{
+	margin-top: 1rem;
+	margin-left: 17px;
+	}
+
+form input[type="text"]{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+}
+
+#zip{
+	display: flex;
+	margin-top: 0.5rem;
+}
+#zip select{
+	padding: 0.5rem 0.7rem;
+}
+#zip input[type="number"]{
+	padding: 0.5rem 0.7rem;
+	margin-left: 5px;	
+	width: 200px;
+}
+
+#cnfPayment{
+	width: 100%;
+	padding: 0.7rem 1.5rem;
+	margin-top: 1rem;
+	cursor: pointer;
+	width: 330px;
+	margin-left: 15px;
+	border-radius: 5px;
+}
+
+
+#cnfPayment{
+    color: White;
+    background-color:  #3d3d3d;
+    border: none ;
+    cursor: pointer;
+    padding: 10px 20px;
+  
+   }
+  
+#foot{
+    color: #3d3d3d;
+    text-align: center;
+}
+#foot1{
+    text-align: center;
+    color: grey;
+}
+
+
+
+
+
+
+#card_num{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+}
+#head{
+    font-weight: lighter;
+    padding: 10px 10px 10px 20px;
+}
