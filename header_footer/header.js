@@ -22,6 +22,7 @@ function dropDown(a) {
     }
 }
 
+
 function searchBar() {
     var bar = document.querySelector("#inputBox")
     bar.style.height = "70px";

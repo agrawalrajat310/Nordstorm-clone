@@ -107,7 +107,7 @@ let header=()=>{
         </div>
         <div id="navs">
             <button id="red" class="navEle" onclick="dropDown('Sale')" onmouseover="dropDown('Sale')">Sale</button>
-            <button class="navEle" onclick="dropDown('Women')" onmouseover="dropDown('Women')">Women</button>
+             <button class="navEle" onclick="dropDown('Women')"  onmouseover="dropDown('Women')">Women</button>
             <button class="navEle" onclick="dropDown('Men')" onmouseover="dropDown('Men')">Men</button>
             <button class="navEle" onclick="dropDown('Kids')" onmouseover="dropDown('Kids')">Kids</button>
             <button class="navEle" onclick="dropDown('YoungAdult')"
@@ -133,13 +133,13 @@ let header=()=>{
                 </div>
             </div>
             <div id="two" onmouseenter="removeBar()">
-                <p onmouseenter="signBar()">Sign In</p>
+                <p onmouseenter="signBar()"><a href="../signIn.html">Sign In</a></p>
                 <img src="https://cdn-icons-png.flaticon.com/128/2211/2211057.png"></img>
             </div>
-            <div id="signIN" onmouseleave="removeSignBar()">
+            <div id="signIN" onmouseleave="removeSignBar()" >
                 <ul>
-                    <li>
-                        <a href="signin.html">Sign In</a>
+                    <li id="signup_page">
+                        <a href="../signIn.html">Sign In</a>
                     </li>
                     <li>
                         <a href="signup.html">Create Account</a>
@@ -2349,4 +2349,7 @@ let header=()=>{
     </div>
 </div>`
 }
+
+
 export {footer, header}
+
