@@ -441,16 +441,18 @@ let data = {
   ],
 };
 
-data.men.forEach(({ detail, price }) => {
-  console.log(price);
-});
+// data.kids.forEach(({ detail, price }) => {
+//   console.log(price);
+// });
 
 let main = document.getElementById("main");
 
 function display(data) {
   main.innerHTML = null;
 
-  data.men.forEach(({ image, title, des, price }) => {
+  data.kids.forEach(({ image, title, des, price }) => {
+
+
     let div = document.createElement("div");
 
     div.setAttribute("class", "card");
