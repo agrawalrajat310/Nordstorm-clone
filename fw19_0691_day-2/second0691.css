@@ -1,0 +1,19 @@
+#main {
+    border: 1px solid red;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .mensimg {
+    border: 1px solid teal;
+    width: 50%;
+  }
+
+  h3 {
+    border: 1px solid green;
+    width: 25%;
+  }
