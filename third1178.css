@@ -62,3 +62,34 @@ box-sizing: border-box;
     border-radius: 0.5em;
     cursor: pointer;
 }
+.menu li:hover{
+    background-color: greenyellow;
+}
+.active{
+    background-color: #23224a;
+}
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+
+#nord_main{
+    display: flex;
+    border: 1px red solid;
+   width: 90%;
+margin: auto;
+}
+#child_image{
+    border: 1px green solid;
+
+}
+
+
+
+
+
+
+
+
+
+
