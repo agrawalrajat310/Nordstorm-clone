@@ -451,8 +451,6 @@ function display(data) {
   main.innerHTML = null;
 
   data.kids.forEach(({ image, title, des, price }) => {
-
-
     let div = document.createElement("div");
 
     div.setAttribute("class", "card");
