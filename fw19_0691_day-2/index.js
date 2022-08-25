@@ -456,6 +456,7 @@ function display(data) {
     div.setAttribute("class", "card");
 
     let img = document.createElement("img");
+    img.setAttribute("class", "mensimg");
     img.src = image;
 
     let nam = document.createElement("h3");
