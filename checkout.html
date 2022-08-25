@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CART</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link
+
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="common.css" />
+
+   
+
+    <style>
+
+    #body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       
+    }
+
+     #content{
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         text-align: center;
+     }
+
+     #content > h1{
+   
+       color: rgb(31, 109, 145);
+       margin-bottom: -10px;
+     }
+
+     #product_container{
+        width: 70%;
+        border: 1px solid none;
+        display: flex;
+        margin: auto;
+        margin-bottom: 50px ;
+        justify-content: space-around;
+       
+     }
+
+     #product_cart{
+
+        display: grid;
+     
+        border: 1px solid none;
+        width: 50%;
+        justify-content: space-around;
+        border-radius: 10px;    
+        gap: 15px;  
+       
+     }
+
+     #head{
+	font-weight: lighter;
+	font-size: 20px;
+	padding: 10px 10px 10px 20px;
+}
+     #product_cart>div{
+        border: 1px solid none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ebe7cf8a;
+        border-radius: 20px 0px;
+        height: fit-content;
+   
+     }
+
+#foot{
+  margin-left: 20px;
+margin-right: 50%;
+text-align: center;
+}
+     #product_cart>div:hover{
+        border: 1px solid  #8b8b8b;;
+       
+     }
+
+     #product_cart>div>img{
+      
+        width: 150px;
+        height: 150px;
+        border-radius: 20px 0px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+        margin-right: 20px;
+     }
+
+     #product_cart>div>h2{
+      
+      margin: 0px 15px;
+
+   }
+
+
+
+
+     #checkout{
+        border: 1px solid none;
+        width: 37%;
+        padding: 20px;
+        margin-left: 60px;
+        background-color: #f4f4f4;
+     
+     }
+
+     #checkout > div{
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+    
+     }
+
+     
+
+     #checkout  input{
+
+       padding: 10px  20px;
+       border: none;     
+       width: 80%;
+
+     }
+
+     #checkout > hr  {
+
+      margin-bottom: 10px;
+      }
+
+
+     #checkout > hr + h2 {
+
+     margin-bottom: 10px;
+     }
+
+     #input_cart{
+       margin-bottom: 20px;
+
+     }
+
+     #Place_order + img {
+      width: 100%;
+     }
+
+
+     #input_cart button{
+      color: white;
+      background-color:  black;
+      border: none ;
+      cursor: pointer;
+      padding: 10px 20px;
+    
+     }
+     #input_cart button:hover{
+      color: white;
+      
+     
+     }
+
+     .delet_button{
+
+        margin: 5px 20px;
+        padding: 5px 20px;
+        background-color: black;
+        color: white;
+        margin-right: 30px;
+        font-size: 18px;
+        
+        
+        
+     }
+
+     #title_cart{
+      width: 300px;
+     }
+
+     .amount_data h2{
+      font-weight: 500;
+      margin: 5px 0px;
+     }
+
+
+
+     #Place_order{
+      color:white;
+      background-color: #3d3d3d;
+      border: none ;
+      cursor: pointer;
+      padding: 10px 20px;
+      width: 100%;
+    
+     }
+     
+
+     body{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+
+
+     #Product_e{
+
+      color: black;
+      background-color:  #d6c14d;
+      border: none ;
+      cursor: pointer;
+      padding: 10px 20px;
+      width: 200px;
+     
+    
+     }
+    
+body{
+  background-color: #f4f4f4;
+}
+     
+
+
+
+     
+
+
+
+    </style>
+
+
+
+  </head>
+
+  <body>
+
+
+
+   <h1 id="head">NORDSTROM</h1>
+    <div id="content">
+     
+     </div>
+
+   
+     
+<div id="product_container">
+
+    
+    <div id="product_cart">
+        
+        
+        
+        
+    </div>
+    
+    
+    <div id="checkout">
+
+      <h2>Cart Details</h2>
+      <div id="input_cart" ><input type="text" placeholder="Have a Coupan ?"> <button id="Apply_coupan">Apply</button></div>
+
+      <hr>
+
+     <h2>PRICE DETAILS</h2>
+     <div class="amount_data"> <h2>Cart Items</h2> <h2 id="cart_qty">0</h2></div>
+
+     <div class="amount_data"> <h2>Total MRP</h2>  <h2 id="total_mrp">0</h2></div> 
+     <div class="amount_data"> <h2>Discount</h2>  <h2 id="discount">0</h2></div> 
+
+   
+     <hr>
+
+     <div> <h2>Total Amount</h2>  <h2 id="total_amount">0</h2></div> 
+
+     <button id="Place_order">Continue>>></button>
+
+     <img src="https://img.pikbest.com/png-images/20191028/e-commerce-shopping-festival-shopping-gif_2515306.png!bw700" alt="">
+
+
+    </div>
+
+    
+    
+</div>
+        
+  <p id="foot">By placing your order, you agree to the Terms & Conditions and Privacy Policy of Borderfree from Pitney Bowes, Nordstrom’s international fulfillment service. Borderfree is an online merchant that is located at Shelton, US, 06484, 27 Waterview Dr, CT.</p> 
+
+   
+
+
+  </body>
+</html>
+
+<script src="./scripts/cart.js" type="module"></script>
+
+
+<script>
+
+
+ let arr = JSON.parse(localStorage.getItem("carttt")) 
+
+ let displayData = ()=> {
+
+    let cart_products = document.querySelector("#product_cart")
+    cart_products.innerHTML = ""
+
+    if(arr == ""){
+
+      let cart_products = document.querySelector("#product_cart")
+
+      let div = document.createElement("div")
+      div.style.padding = "0px 150px"
+      div.style.alignContent = "center"
+     
+     
+      let img = document.createElement("img")
+        img.src = "https://cdn.dribbble.com/users/887568/screenshots/3172047/ufo.gif"
+        
+
+      let ttt =  document.createElement("h1") 
+      ttt.innerText = "Cart Is Empty"
+      ttt.style.color = "rgb(31, 109, 145)"
+ 
+      let Product = document.createElement("button") 
+      Product.setAttribute("id","Product_e")
+      Product.innerText = "Go To Products"
+      Product.addEventListener("click", function(){
+        
+        window.location.href = "./Product-DAY2/productpage.html"
+
+      })
+
+       div.append(ttt,Product)
+        cart_products.append(img,div)
+
+
+
+    }
+
+    console.log(cart_products)
+
+    arr.map((el,index) =>{
+
+        
+       
+        let div = document.createElement("div")
+        div.setAttribute("id","product")
+
+        let img = document.createElement("img")
+        img.src = el.src
+
+        let title = document.createElement("h2")
+        title.innerText = el.tittle
+        title.setAttribute("id","title_cart")
+
+        let price = document.createElement("h2")
+        price.innerText = " ₹ " + el.price
+
+
+      var select= document.createElement("select");
+      
+       var option1 = document.createElement("option");
+       option1.setAttribute("value",0);
+       option1.innerText="Qty:";
+
+
+       var option2 = document.createElement("option");
+       option2.setAttribute("value",1);
+       option2.innerText="Qty:"+1;
+      
+       select.style.width="60px";
+       select.style.marginLeft="30px";
+    
+       select.style.outline="none";
+       select.style.border="3px solid white";
+       
+       
+       var option3 = document.createElement("option");
+       option3.setAttribute("value",2);
+       option3.innerText="Qty:"+2;
+
+       var option4 = document.createElement("option");
+       option4.setAttribute("value",3);
+       option4.innerText="Qty:"+3;
+
+       var option5 = document.createElement("option");
+       option5.setAttribute("value",4);
+       option5.innerText="Qty:"+4;
+
+       select.append(option2,option3,option4);
+     
+       select.addEventListener("change",function(){
+           var selected = select.value;
+           price.innerHTML=" ₹ "+el.price*selected;
+           addToArray(el,index,selected);
+       })
+       function  addToArray(el,index,selected){
+           if(selected==="2"){
+              arrayOfCardToPay.splice(index,1,el.price*2);
+              
+           
+           }
+           if(selected==="1"){
+            arrayOfCardToPay.splice(index,1,el.price*1);
+           
+           }
+           if(selected==="3"){
+            arrayOfCardToPay.splice(index,1,el.price*3);
+         
+           }
+           
+          //  callToArray(arrayOfCardToPay);
+       }
+        
+
+        let delet = document.createElement("button")
+        delet.innerText = "Delete"
+        delet.setAttribute("class","delet_button")
+        delet.style.cursor = "pointer"
+        delet.addEventListener("click", function(){
+
+            delete_product(el,index)
+        })
+
+        // let quanti
+
+        div.append(img,title,price,select,delet)
+        cart_products.append(div)
+
+    })
+
+
+    
+
+ }
+
+ displayData()
+
+
+ let delete_product = ((el,index) =>{
+ 
+    arr.splice(index,1)
+    localStorage.setItem("carttt",JSON.stringify(arr))
+    window.location.reload()
+
+ })
+
+
+//  total_mrp
+// discount
+
+// total_amount
+
+
+//input_cart
+
+let total = 0;
+
+let discount  ;
+let final_total  ;
+
+let Total_mrp = document.querySelector("#total_mrp")
+let discount_mrp = document.querySelector("#discount")
+let final = document.querySelector("#total_amount")
+
+
+
+
+Total_mrp.innerText = total 
+
+
+document.querySelector("#Apply_coupan").addEventListener("click",coupanData)
+
+function coupanData(){
+
+ let applied_coupan = document.querySelector("#input_cart > input").value
+
+//  console.log(applied_coupan)
+
+   if(applied_coupan != "Masai50"){
+  alert("Coupan is Empty")
+}else if ( applied_coupan != "Masai50"){
+     alert("Not a Valid Coupan")
+   }
+   
+    if ( applied_coupan == "Masai50"){
+       
+     
+      final_total = (total / 100) * 60
+        discount = total - final_total
+        discount_mrp.innerText = ` - ${discount}`
+        final.innerText = final_total
+        alert("Coupon Applied Successfully")
+        
+    }
+ 
+
+}
+
+
+
+
+
+
+function amountSHow (){
+
+ 
+
+  arr.map((el)=>{
+
+
+    /// TOTAL MRP ////
+    let price_ = +el.price
+  console.log(price_)
+    total = total + price_
+  
+    Total_mrp.innerText = total 
+    final.innerText = total
+
+  })
+
+
+}
+
+amountSHow()
+
+
+document.querySelector("#Place_order").addEventListener("click",Placeorder )
+
+function Placeorder(){
+
+ alert("Going To Checkout")
+   window.location.href = "payment.html"
+  localStorage.clear()
+
+}
+
+
+</script>
