@@ -103,13 +103,14 @@ let header=()=>{
 <div id="nav-bar" onmouseenter="removeBar()">
     <div id="inside-div">
         <div id="logo">
-            <a style="width: 15%;" href="header.html"><img style="width:100px" src="./images/logo.png"></a>
+            <a style="width: 15%;" href="header.html"><img style="width:100px" src="https://logos-marques.com/wp-content/uploads/2020/09/Nordstrom-logo.png"></a>
         </div>
         <div id="navs">
             <button id="red" class="navEle" onclick="dropDown('Sale')" onmouseover="dropDown('Sale')">Sale</button>
-            <button class="navEle" onclick="dropDown('Women')" onmouseover="dropDown('Women')">Women</button>
-            <button class="navEle" onclick="dropDown('Men')" onmouseover="dropDown('Men')">Men</button>
-            <button class="navEle" onclick="dropDown('Kids')" onmouseover="dropDown('Kids')">Kids</button>
+            <button id="Womens_data" class="navEle" onclick="dropDown('Women')" onmouseover="dropDown('Women')">Women</button>
+
+            <button  id="mens_data" class="navEle" onclick="dropDown('Men')" onmouseover="dropDown('Men')">Men</button>
+            <button  id="kids_data" class="navEle" onclick="dropDown('Kids')" onmouseover="dropDown('Kids')">Kids</button>
             <button class="navEle" onclick="dropDown('YoungAdult')"
                 onmouseover="dropDown('YoungAdult')">YoungAdult</button>
             <button class="navEle" onclick="dropDown('Activewear')"
