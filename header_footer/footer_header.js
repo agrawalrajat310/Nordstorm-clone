@@ -106,22 +106,20 @@ let header=()=>{
             <a style="width: 15%;" href="header.html"><img style="width:100px" src="https://logos-marques.com/wp-content/uploads/2020/09/Nordstrom-logo.png"></a>
         </div>
         <div id="navs">
-            <button id="red" class="navEle" onclick="dropDown('Sale')" onmouseover="dropDown('Sale')">Sale</button>
-            <button id="Womens_data" class="navEle" onclick="dropDown('Women')" onmouseover="dropDown('Women')">Women</button>
+            <button id="red" class="navEle" onclick="dropDown('Sale')">Sale</button>
+            <button id="Womens_data" class="navEle" onclick="dropDown('Women')">Women</button>
 
-            <button  id="mens_data" class="navEle" onclick="dropDown('Men')" onmouseover="dropDown('Men')">Men</button>
-            <button  id="kids_data" class="navEle" onclick="dropDown('Kids')" onmouseover="dropDown('Kids')">Kids</button>
-            <button class="navEle" onclick="dropDown('YoungAdult')"
-                onmouseover="dropDown('YoungAdult')">YoungAdult</button>
-            <button class="navEle" onclick="dropDown('Activewear')"
-                onmouseover="dropDown('Activewear')">Activewear</button>
-            <button class="navEle" onclick="dropDown('Home')" onmouseover="dropDown('Home')">Home</button>
-            <button class="navEle" onclick="dropDown('Gifts')" onmouseover="dropDown('Gifts')">Gifts</button>
-            <button class="navEle" onclick="dropDown('Beauty')" onmouseover="dropDown('Beauty')">Beauty</button>
-            <button class="navEle" onclick="dropDown('Designer')"
-                onmouseover="dropDown('Designer')">Designer</button>
-            <button class="navEle" onclick="dropDown('Brands')" onmouseover="dropDown('Brands')">Brands</button>
-        </div>
+            <button id="mens_data" class="navEle" onclick="dropDown('Men')">Men</button>
+            <button id="kids_data" class="navEle" onclick="dropDown('Kids')">Kids</button>
+            <button class="navEle" onclick="dropDown('YoungAdult')">YoungAdult</button>
+            <button class="navEle" onclick="dropDown('Activewear')">Activewear</button>
+            <button class="navEle" onclick="dropDown('Home')">Home</button>
+            <button class="navEle" onclick="dropDown('Gifts')">Gifts</button>
+            <button class="navEle" onclick="dropDown('Beauty')">Beauty</button>
+            <button class="navEle" onclick="dropDown('Designer')">Designer</button>
+            <button class="navEle" onclick="dropDown('Brands')">Brands</button>
+        <button onclick="removeDropdown()"> <strong>X</strong></button>
+            </div>
         <div id="search" onmouseleave="removeSignBar()">
             <div id="one" onmouseenter="searchBar()">
                 <div class="img" onmouseenter="removeSignBar()">
