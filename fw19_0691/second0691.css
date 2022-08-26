@@ -1,8 +1,10 @@
+/*
+
 #parentdiv {
   border: 1px solid black;
   width: 100%;
   display: flex;
-  /* padding: 500px; */
+  
 }
 
 #divone {
@@ -15,14 +17,14 @@
   border: 1px solid blue;
   width: 100%;
   height: 100%;
-  /* padding: 10px; */
+ 
 }
 
 #seconddiv {
-  /* border: 1px solid green; */
+  border: 1px solid green;
   width: 40%;
   margin-left: 320px;
-  /* position: fixed; */
+ 
 }
 
 #seconddiv > img {
@@ -57,4 +59,7 @@
 h3 {
   border: 1px solid green;
   width: 25%;
-}
+} 
+
+
+*/
