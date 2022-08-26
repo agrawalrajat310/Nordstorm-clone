@@ -1,5 +1,5 @@
-function footer(){
-    return `<div class="footer">
+function footer() {
+  return `<div class="footer">
     <div class="footer-column">
         
         <ul class="lo">
@@ -87,10 +87,10 @@ function footer(){
     <p>Terms &amp; Conditions</p>
     <p>Intrest Based Ads</p>
     <p>&copy;2022 Nordstrom,Inc</p>
-</div>`
+</div>`;
 }
-let header=()=>{
-    return ` <div id="top1">
+let header = () => {
+  return ` <div id="top1">
     <div>
         <p>
             <strong>Pick Up Today-in store or curbside.</strong>
@@ -160,7 +160,7 @@ let header=()=>{
 
         </div>
     </div>
-    <div class="clear"></div>
+    <div class="clear">aaa</div>
 </div>
 <div id="main-content">
     <div class="Sale-content">
@@ -2346,6 +2346,6 @@ let header=()=>{
             </div>
         </div>
     </div>
-</div>`
-}
-export {footer, header}
+</div>`;
+};
+export { footer, header };
