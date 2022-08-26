@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signin</title>
     <link rel="stylesheet" href="./header_footer/footer.css">
     <link rel="stylesheet" href="./header_footer/header.css">
     <style>
@@ -113,6 +113,49 @@
     import {footer, header} from "./header_footer/footer_header.js"
 document.getElementById("footer1").innerHTML=footer();
 document.getElementById("header1").innerHTML=header();
+
+let userData_ls = JSON.parse(localStorage.getItem("users"));
+
+document.getElementById("SignUpPage").addEventListener("submit", (e)=>{
+    e.preventDefault()
+   let check_obj= {
+    email: document.getElementById("Email").value,
+    pass: document.getElementById("Password").value,
+   };
+   if(checkSign(check_obj.email, check_obj.pass)===true){
+    localStorage.setItem("isLogged", true);
+    alert("Login Successfull!")
+   window.location.href = "./third1178.html"
+   }else{
+    localStorage.setItem("isLogged", false);
+    alert("Check email and password!!!")
+   }
+    
+})
+
+function checkSign(email, password){
+   
+    
+    if(JSON.parse(localStorage.getItem("users")===null)){
+        alert("Sign Up first")
+        window.location.href = "./signup.html"
+        }else{
+            let checking = userData_ls.filter((el)=>{
+        
+        return email===el.email && password===el.password
+    });
+
+    if(checking.length>0){
+        return true
+    }else{
+        return false;
+    }
+        }
+   
+}
+
+
+
 
 </script>
 <script src="./header_footer/header.js"></script>
