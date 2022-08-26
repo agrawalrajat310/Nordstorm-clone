@@ -445,6 +445,9 @@ let data = {
 //   console.log(price);
 // });
 
+let pdiv = document.getElementById("parentdiv");
+let divone = document.getElementById("divone");
+
 let main = document.getElementById("main");
 
 function display(data) {
@@ -452,7 +455,6 @@ function display(data) {
 
   data.kids.forEach(({ image, title, des, price }) => {
     let div = document.createElement("div");
-
     div.setAttribute("class", "card");
 
     let img = document.createElement("img");
