@@ -75,10 +75,6 @@ function footer() {
             </div>
         <ul>
     </div>
-    
-
-    
-    
 </div>
 
 <div class="footer" >

@@ -160,7 +160,7 @@ let header = () => {
 
         </div>
     </div>
-    <div class="clear">aaa</div>
+    <div class="clear"></div>
 </div>
 <div id="main-content">
     <div class="Sale-content">
