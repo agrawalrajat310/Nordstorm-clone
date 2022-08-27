@@ -90,22 +90,31 @@ function footer() {
 </div>`;
 }
 let header = () => {
-  return ` <div id="top1">
-    <div>
-        <p>
-            <strong>Pick Up Today-in store or curbside.</strong>
-            <a title="Learn About International Shipping" href="">Pickup Option</a>
-        </p>
-        <button href=""><img src="https://n.nordstrommedia.com/alias/IN.gif"><span>India</span></button>
-    </div>
-    <div class="clear"></div>
-</div>
+  return ` 
+       
 <div id="nav-bar" onmouseenter="removeBar()">
+<<<<<<< HEAD
     <div id="inside-div">
         <div id="logo">
             <a style="width: 15%;" href="../homepage/index.html"><img style="width:100px" src="https://logos-marques.com/wp-content/uploads/2020/09/Nordstrom-logo.png"></a>
         </div>
+=======
+    
+>>>>>>> 78e4596e828672fa4253c077a27a649ac4b81f1e
         <div id="navs">
+        
+            <button  id="red" class="navEle" onclick="clickec('Sale')" onmouseover="dropDown('Sale')" onmouseout="dropout()">Sale</button>
+            <button class="navEle" onclick="clickec('Women')" onmouseover="dropDown('Women')"  onmouseout="dropout()">Women</button>
+            <button class="navEle" onclick="clickec('Men')" onmouseover="dropDown('Men')"  onmouseout="dropout()">Men</button>
+            <button class="navEle" onclick="clickec('Kids')" onmouseover="dropDown('Kids')"  onmouseout="dropout()">Kids</button>
+            <button class="navEle" onclick="clickec('YoungAdult')" onmouseover="dropDown('YoungAdult')"  onmouseout="dropout()">YoungAdult</button>
+            <button class="navEle" onclick="clickec('Activewear')" onmouseover="dropDown('Activewear')"  onmouseout="dropout()">Activewear</button>
+            <button class="navEle" onclick="clickec('Home')" onmouseover="dropDown('Home')"  onmouseout="dropout()">Home</button>
+            <button class="navEle" onclick="clickec('Gifts')" onmouseover="dropDown('Gifts')"  onmouseout="dropout()">Gifts</button>
+            <button class="navEle" onclick="clickec('Beauty')"   onmouseover="dropDown('Beauty')" onmouseout="dropout()">Beauty</button>
+            <button class="navEle" onclick="clickec('Designer')"   onmouseover="dropDown('Designer')" onmouseout="dropout()">Designer</button>
+            <button class="navEle" onclick="clickec('Brands')" onmouseover="dropDown('Brands')"  onmouseout="dropout()">Brands</button>
+
             <button id="red" class="navEle" onclick="dropDown('Sale')">Sale</button>
             <button id="Womens_data" class="navEle" onclick="dropDown('Women')">Women</button>
 
@@ -159,9 +168,10 @@ let header = () => {
             </div>
 
         </div>
-    </div>
+        
     <div class="clear"></div>
 </div>
+<<<<<<< HEAD
 <div id="main-content">
     <div class="Sale-content">
         <div>
@@ -2347,5 +2357,200 @@ let header = () => {
         </div>
     </div>
 </div>`;
+=======
+`;
+>>>>>>> 78e4596e828672fa4253c077a27a649ac4b81f1e
 };
-export { footer, header };
+let head1 = () => {
+  return `
+      <div class="Sale-content">
+              <div class="firstDiv">
+                  <ul>
+                      <li id="saleIn">
+                          <h3 class="mainh3"><a href="">Sale: Get Inspired</a></h3>
+                      </li>
+                      <hr>
+                      <li>
+                          <h3><a href="">Bestsellers</a></h3>
+                      </li>
+                      <li>
+                          <h3>
+                              <a href="">New Markdowns</a>
+                          </h3>
+                      </li>
+                      <li>
+                          <h3>
+                              <a href="">Price Matched</a>
+                          </h3>
+                      </li>
+                      <li>
+                          <h3>
+                              <a href="">Men's Designer Sale</a>
+                          </h3>
+                      </li>
+                      <li>
+                          <h3>
+                              <a href="">Women's Designer Sale</a>
+                          </h3>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li>
+                          <h3 class="mainh3">
+                              <a href="">Women</a>
+                          </h3>
+                      </li>
+                      <li>
+                          <a href="">New Markdowns</a>
+                      </li>
+                      <li>
+                          <a href="">Clothing</a>
+                      </li>
+                      <li>
+                          <a href="">Shoes</a>
+                      </li>
+                      <li>
+                          <a href="">Handbags & Wallets</a>
+                      </li>
+                      <li>
+                          <a href="">Jewelry</a>
+                      </li>
+                      <li>
+                          <a href="">Accessories</a>
+                      </li>
+                      <li>
+                          <a href="">Beauty</a>
+                      </li>
+                      <li>
+                          <a href="">Designer</a>
+                      </li>
+                      <li class="topMargin">
+                          <a href="">Plus</a>
+                      </li>
+                      <li>
+                          <a href="">Petite</a>
+                      </li>
+                      <li>
+                          <a href="">Maternity</a>
+                      </li>
+                      <li>
+                          <a href="">Juniors</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li>
+                          <h3 class="mainh3">
+                              <a href="">Men</a>
+                          </h3>
+                      </li>
+                      <li>
+                          <a href="">New Markdowns</a>
+                      </li>
+                      <li>
+                          <a href="">Clothing</a>
+                      </li>
+                      <li>
+                          <a href="">Shoes</a>
+                      </li>
+                      <li>
+                          <a href="">Accessories</a>
+                      </li>
+                      <li>
+                          <a href="">Grooming & Cologne</a>
+                      </li>
+                      <li>
+                          <a href="">Designer</a>
+                      </li>
+                      <li>
+                          <h3 class="mainh3">
+                              <a href="">Designer</a>
+                          </h3>
+                      </li>
+                      <li>
+                          <a href="">Women</a>
+                      </li>
+                      <li>
+                          <a href="">Men</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li>
+                          <h3 class="mainh3">
+                              <a href="">Kids</a>
+                          </h3>
+                      </li>
+                      <li>
+                          <a href="">New Markdowns</a>
+                      </li>
+                      <li>
+                          <a href="">Girls</a>
+                      </li>
+                      <li>
+                          <a href="">Boys</a>
+                      </li>
+                      <li>
+                          <a href="">Baby</a>
+                      </li>
+                      <li>
+                          <a href="">Baby Gear & Essentials</a>
+                      </li>
+                      <li>
+                          <a href="">Shoes</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li>
+                          <h3 class="mainh3">
+                              <a href="">Home</a>
+                          </h3>
+                      </li>
+                      <li>
+                          <a href="">New Markdowns</a>
+                      </li>
+                      <li>
+                          <a href="">Bedding & Bath</a>
+                      </li>
+                      <li>
+                          <a href="">Home Decor</a>
+                      </li>
+                      <li>
+                          <a href="">Electronics & Tech Accessories</a>
+                      </li>
+                      <li>
+                          <a href="">Luggage & Travel</a>
+                      </li>
+                      <li>
+                          <a href="">Tabletop & Kitchen</a>
+                      </li>
+                      <li>
+                          <h3 class="mainh3"><a href="">Beauty</a></h3>
+                      </li>
+                  </ul>
+              </div>
+              <div class="marginRem">
+              <button onclick="dropOOut()">X</button>
+                  <div>
+                      <div>
+                          <a href="">
+                              <div>
+                                  <img src="https://n.nordstrommedia.com/id/faae0c02-a9a9-427d-b69e-ce5fbd38e500.png">
+                              </div>
+                          </a>
+                      </div>
+                      <div>
+                          <a class="decor" href="">New Markdowns</a>
+                          <hr>
+                      </div>
+                  </div>
+              </div>`;
+};
+
+export { footer, header, head1 };

@@ -326,3 +326,12 @@ let display = () => {
 
 display();
 
+<<<<<<< HEAD
+=======
+let w1=document.getElementById("w1");
+w1.addEventListener("click", ()=>{
+  console.log("hii");
+});
+// function womens_items(){
+// }
+>>>>>>> 78e4596e828672fa4253c077a27a649ac4b81f1e
