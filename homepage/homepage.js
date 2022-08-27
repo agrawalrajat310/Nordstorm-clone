@@ -308,3 +308,10 @@ let display = () => {
 };
 
 display();
+
+let w1=document.getElementById("w1");
+w1.addEventListener("click", ()=>{
+  console.log("hii");
+});
+// function womens_items(){
+// }
