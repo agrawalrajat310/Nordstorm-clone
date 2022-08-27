@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NAME ACC. TO PAGE OPENING</title>
+    <title>NORD STROM</title>
     <link rel="stylesheet" href="../header_footer/footer.css" />
     <link rel="stylesheet" href="../header_footer/header.css" />
     <!-- <link rel="stylesheet" href="second0691.css" /> -->
@@ -188,6 +188,11 @@
   import { footer, header } from "../header_footer/footer_header.js";
   document.getElementById("footer1").innerHTML = footer();
   document.getElementById("header1").innerHTML = header();
+  let userls = JSON.parse(localStorage.getItem("users"))
+let logged = JSON.parse(localStorage.getItem("isLogged")) || false;
+if(logged){
+  document.getElementById("login_check").innerText = userls[userls.length-1].name
+}
 </script>
 
 <script src="../header_footer/header.js"></script>

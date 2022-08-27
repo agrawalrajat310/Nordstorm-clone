@@ -95,6 +95,7 @@ let header = () => {
 <div id="nav-bar" onmouseenter="removeBar()">
     
         <div id="navs">
+        
             <button  id="red" class="navEle" onclick="clickec('Sale')" onmouseover="dropDown('Sale')" onmouseout="dropout()">Sale</button>
             <button class="navEle" onclick="clickec('Women')" onmouseover="dropDown('Women')"  onmouseout="dropout()">Women</button>
             <button class="navEle" onclick="clickec('Men')" onmouseover="dropDown('Men')"  onmouseout="dropout()">Men</button>
@@ -106,6 +107,59 @@ let header = () => {
             <button class="navEle" onclick="clickec('Beauty')"   onmouseover="dropDown('Beauty')" onmouseout="dropout()">Beauty</button>
             <button class="navEle" onclick="clickec('Designer')"   onmouseover="dropDown('Designer')" onmouseout="dropout()">Designer</button>
             <button class="navEle" onclick="clickec('Brands')" onmouseover="dropDown('Brands')"  onmouseout="dropout()">Brands</button>
+
+            <button id="red" class="navEle" onclick="dropDown('Sale')">Sale</button>
+            <button id="Womens_data" class="navEle" onclick="dropDown('Women')">Women</button>
+
+            <button id="mens_data" class="navEle" onclick="dropDown('Men')">Men</button>
+            <button id="kids_data" class="navEle" onclick="dropDown('Kids')">Kids</button>
+            <button class="navEle" onclick="dropDown('YoungAdult')">YoungAdult</button>
+            <button class="navEle" onclick="dropDown('Activewear')">Activewear</button>
+            <button class="navEle" onclick="dropDown('Home')">Home</button>
+            <button class="navEle" onclick="dropDown('Gifts')">Gifts</button>
+            <button class="navEle" onclick="dropDown('Beauty')">Beauty</button>
+            <button class="navEle" onclick="dropDown('Designer')">Designer</button>
+            <button class="navEle" onclick="dropDown('Brands')">Brands</button>
+        <button onclick="removeDropdown()"> <strong>X</strong></button>
+            </div>
+        <div id="search" onmouseleave="removeSignBar()">
+            <div id="one" onmouseenter="searchBar()">
+                <div class="img" onmouseenter="removeSignBar()">
+                    <img src="https://cdn-icons-png.flaticon.com/128/16/16492.png"></img>
+                </div>
+                <input id="inputBox" maxlength="200" placeholder="What can we help you find?" type="search"
+                    value="">
+                <div class="word">
+                    <p>Search</p>
+                </div>
+            </div>
+            <div id="two" onmouseenter="removeBar()">
+                <p onmouseenter="signBar()" id="login_check">Sign In</p>
+                <img src="https://cdn-icons-png.flaticon.com/128/2211/2211057.png"></img>
+            </div>
+            <div id="signIN" onmouseleave="removeSignBar()">
+                <ul>
+                    <li>
+                        <a href="signin.html">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="signup.html">Create Account</a>
+                    </li>
+                    <li>
+                        <a href=""><span>Your Account</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Wish List</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Looks</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Stores & Events</span></a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
         
     <div class="clear"></div>
