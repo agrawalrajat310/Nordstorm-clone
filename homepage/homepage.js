@@ -230,15 +230,7 @@ let filterData = (n, x) => {
   appendData(s, box);
 };
 
-let display = () => {
-  greatDeal();
-  arrivals_data();
-  bestSelling();
-  tranding();
-  fvt_images();
-};
 
-display();
 let array = [
   "./images/4th.png",
   "./images/5th.png",
@@ -291,3 +283,28 @@ let array1 = [
     name: "Designer",
   },
 ];
+
+let shop_by_categ=(data)=>{
+  let box=document.querySelector("#box13>div");
+  data.forEach((element)=>{
+    let div=document.createElement("div");
+    let img=document.createElement("img");
+    img.src=element.image;
+    let h2=document.createElement("h3");
+    h2.innerText=element.name;
+    div.append(img,h2);
+    box.append(div);
+  })
+}
+
+let display = () => {
+  greatDeal();
+  arrivals_data();
+  bestSelling();
+  shop_by_categ(array1);
+  tranding();
+  fvt_images();
+
+};
+
+display();

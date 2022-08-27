@@ -247,15 +247,20 @@ width: 0;
 #box12{
     text-align: center;
 }
+#box12>p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
 #box11{
     width: 100%;
-    height: 500px;
+    height: auto;
     margin-top:50px;
     margin-bottom: 50px;
     text-align: center;
+    box-sizing: border-box;
 }
 #box11>a>img{
-    height: 100%;
+    height: 500px;
     width: 100%;
 }
 hr{
@@ -263,4 +268,24 @@ hr{
     background-color: black;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+#box7>hr{
+    margin:0;
+}
+#box13{
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 50px;
+}
+#box13>div{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+}
+#box13>div>div>img{
+    height: 300px;
+    width: 100%;
 }
