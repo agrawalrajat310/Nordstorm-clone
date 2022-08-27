@@ -132,7 +132,7 @@ let header = () => {
                 </div>
             </div>
             <div id="two" onmouseenter="removeBar()">
-                <p onmouseenter="signBar()">Sign In</p>
+                <p onmouseenter="signBar()" id="login_check">Sign In</p>
                 <img src="https://cdn-icons-png.flaticon.com/128/2211/2211057.png"></img>
             </div>
             <div id="signIN" onmouseleave="removeSignBar()">

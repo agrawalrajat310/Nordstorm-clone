@@ -437,7 +437,7 @@ let data = {
         "Your little skipper will be ready to jump right in while wearing this stretchy, printed rashguard and matching swim shorts.",
     },
   ],
-};
+}
 
 data.men.forEach(({ detail, price }) => {
   console.log(price);
