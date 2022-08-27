@@ -452,12 +452,13 @@ let final_total  ;
 
 let Total_mrp = document.querySelector("#total_mrp")
 let discount_mrp = document.querySelector("#discount")
+
 let final = document.querySelector("#total_amount")
 
 
 
 
-Total_mrp.innerText = total.toFixed(4)
+Total_mrp.innerText = total.toFixed(2)
 
 
 document.querySelector("#Apply_coupan").addEventListener("click",coupanData)
@@ -478,10 +479,10 @@ function coupanData(){
        
      
       final_total = (total / 100) * 60
-        discount = total - final_total
+        discount = (total - final_total).toFixed(2)
         discount_mrp.innerText = ` - ${discount}`
     
-        final.innerText = final_total
+        final.innerText = final_total.toFixed(2)
         alert("Coupon Applied Successfully")
         
     }
