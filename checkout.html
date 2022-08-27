@@ -179,6 +179,7 @@ text-align: center;
      .amount_data h2{
       font-weight: 500;
       margin: 5px 0px;
+     
      }
 
 
@@ -456,7 +457,7 @@ let final = document.querySelector("#total_amount")
 
 
 
-Total_mrp.innerText = total 
+Total_mrp.innerText = total.toFixed(4)
 
 
 document.querySelector("#Apply_coupan").addEventListener("click",coupanData)
@@ -479,6 +480,7 @@ function coupanData(){
       final_total = (total / 100) * 60
         discount = total - final_total
         discount_mrp.innerText = ` - ${discount}`
+    
         final.innerText = final_total
         alert("Coupon Applied Successfully")
         
