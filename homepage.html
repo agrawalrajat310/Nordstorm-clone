@@ -4,10 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="./homepage/homepage.css" />
+    <link rel="stylesheet" href="./header_footer/footer.css">
+    <link rel="stylesheet" href="./header_footer/header.css">
     <title>Nordestorm</title>
   </head>
   <body>
+  
+    <div id="top1">
+      <div>
+          <p>Support Black Business Month! <a href="">Black-Owned & Black-Founded Brands</a></p>
+
+      </div>
+      <p> <img src="https://image.shutterstock.com/image-vector/round-metallic-flag-india-six-600w-1174058512.jpg" alt="India">India</p>
+  </div>
+  <div id="header2">
+      <a href="homepage.html">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Nordstrom_Logo_2019.svg" alt="Nordstrom">   </a>
+      <div>
+          <input type="text" placeholder="Search for Products & brands">
+      </div>
+      <div id="two" onmouseenter="removeBar()">
+          <p onmouseenter="signBar()">Sign In</p>
+          <img src="https://cdn-icons-png.flaticon.com/128/2211/2211057.png" alt=""></img>
+      </div>
+  </div>
+
+  <div class="signIN" onmouseleave="removeSignBar()">
+      <ul>
+          <li>
+              <a href="signIn.html">Sign In</a>
+          </li>
+          <li>
+              <a href="signup.html">Create Account</a>
+          </li>
+          <li>
+              <a href=""><span>Your Account</span></a>
+          </li>
+          <li>
+              <a href=""><span>Wish List</span></a>
+          </li>
+          <li>
+              <a href=""><span>Looks</span></a>
+          </li>
+          <li>
+              <a href=""><span>Stores & Events</span></a>
+          </li>
+      </ul>
+  </div>
+  <div id="hr"></div>
+  <div id="header1">
+  </div>
+  <div class="class"></div>
     <div id="boxes">
       <h2>Shop what you love—faster and easier.</h2>
       <button>Sign In or Create an Account</button>
@@ -194,6 +242,9 @@
             <div id="tranding"></div>
             
           </div>
+          <div id="footer1"></div>
   </body>
 </html>
-<script src="./homepage.js"></script>
+<script src="./header_footer/header_footer.js" type="module"></script>
+<script src="./homepage/homepage.js"></script>
+<script src="./header_footer/header.js"></script>
