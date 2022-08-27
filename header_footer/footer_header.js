@@ -103,7 +103,7 @@ let header = () => {
 <div id="nav-bar" onmouseenter="removeBar()">
     <div id="inside-div">
         <div id="logo">
-            <a style="width: 15%;" href="header.html"><img style="width:100px" src="https://logos-marques.com/wp-content/uploads/2020/09/Nordstrom-logo.png"></a>
+            <a style="width: 15%;" href="../homepage/index.html"><img style="width:100px" src="https://logos-marques.com/wp-content/uploads/2020/09/Nordstrom-logo.png"></a>
         </div>
         <div id="navs">
             <button id="red" class="navEle" onclick="dropDown('Sale')">Sale</button>
@@ -138,10 +138,10 @@ let header = () => {
             <div id="signIN" onmouseleave="removeSignBar()">
                 <ul>
                     <li>
-                        <a href="signin.html">Sign In</a>
+                        <a href="../signIn.html">Sign In</a>
                     </li>
                     <li>
-                        <a href="signup.html">Create Account</a>
+                        <a href="../signup.html">Create Account</a>
                     </li>
                     <li>
                         <a href=""><span>Your Account</span></a>
@@ -199,8 +199,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Women</a>
+                        <h3 class="mainh3" >
+                            Women
                         </h3>
                     </li>
                     <li>
@@ -282,8 +282,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Kids</a>
+                        <h3 class="mainh3" id="second_kid">
+                        Kids
                         </h3>
                     </li>
                     <li>
@@ -391,8 +391,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Women</a>
+                        <h3 class="mainh3" id="second_women">
+                            Women
                         </h3>
                     </li>
                     <li>
@@ -436,8 +436,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Men</a>
+                        <h3 class="mainh3" >
+                            Men
                         </h3>
                     </li>
                     <li>
@@ -474,8 +474,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Kids</a>
+                        <h3 class="mainh3" id="second_kid">
+                           
                         </h3>
                     </li>
                     <li>
@@ -627,8 +627,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Men</a>
+                        <h3 class="mainh3" id="second_men">
+                            Men
                         </h3>
                     </li>
                     <li>
@@ -665,8 +665,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Kids</a>
+                        <h3 class="mainh3" id="second_kid">
+                            Kids
                         </h3>
                     </li>
                     <li>
@@ -856,8 +856,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Kids</a>
+                        <h3 class="mainh3" id="second_kid">
+                           Kids
                         </h3>
                     </li>
                     <li>
@@ -1047,8 +1047,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Kids</a>
+                        <h3 class="mainh3" id="second_kid">
+                            Kids
                         </h3>
                     </li>
                     <li>
@@ -1238,8 +1238,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Kids</a>
+                        <h3 class="mainh3" id="second_kid">
+                           Kids
                         </h3>
                     </li>
                     <li>
@@ -1702,8 +1702,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Kids</a>
+                        <h3 class="mainh3" id="second_kid">
+                            Kids
                         </h3>
                     </li>
                     <li>
@@ -1893,8 +1893,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Kids</a>
+                        <h3 class="mainh3" id="second_kid">
+                            Kids
                         </h3>
                     </li>
                     <li>
@@ -2084,8 +2084,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Kids</a>
+                        <h3 class="mainh3" id="second_kid">
+                          Kids
                         </h3>
                     </li>
                     <li>
@@ -2275,8 +2275,8 @@ let header = () => {
             <div>
                 <ul>
                     <li>
-                        <h3 class="mainh3">
-                            <a href="">Kids</a>
+                        <h3 class="mainh3" id="second_kid">
+                          Kids
                         </h3>
                     </li>
                     <li>

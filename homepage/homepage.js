@@ -1,3 +1,5 @@
+
+
 let fetchData = async (z) => {
   let res1 = await fetch(`https://shielded-inlet-59281.herokuapp.com/api/${z}`);
   let ress = await res1.json();
@@ -68,15 +70,16 @@ let fvt_images = async () => {
 };
 
 let button3 = document.getElementById("right3");
-button3.onclick = function () {
+button3.onclick =  function () {
   var con = document.getElementById("fvt_images");
   slideScroll(con, "right", 0, 1202, 9);
 };
+
 let back3 = document.getElementById("left3");
-back3.onclick = function () {
+back3.onclick =  function () {
   var con = document.getElementById("fvt_images");
   slideScroll(con, "left", 0, 1202, 9);
-};
+}
 
 let bestSelling = async () => {
   let box = document.getElementById("bestSelling");
@@ -88,15 +91,16 @@ let bestSelling = async () => {
 };
 
 let button2 = document.getElementById("right2");
-button2.onclick = function () {
+button2.onclick =  function () {
   var con = document.getElementById("bestSelling");
   slideScroll(con, "right", 0, 1202, 9);
-};
+}
+
 let back2 = document.getElementById("left2");
-back2.onclick = function () {
+back2.onclick=  function () {
   var con = document.getElementById("bestSelling");
   slideScroll(con, "left", 0, 1202, 9);
-};
+}
 
 let arr = [
   {
@@ -160,15 +164,17 @@ let greatDeal = async () => {
 };
 
 let button = document.getElementById("right");
-button.onclick = function () {
+button.onclick =  function () {
   var con = document.getElementById("pics");
   slideScroll(con, "right", 0, 1202, 9);
 };
+
 let back = document.getElementById("left");
-back.onclick = function () {
+back.onclick= function () {
   var con = document.getElementById("pics");
   slideScroll(con, "left", 0, 1202, 9);
 };
+
 function slideScroll(elem, direction, speed, disatance, step) {
   // console.log("hello");
   scrollamount = 0;
@@ -184,16 +190,20 @@ function slideScroll(elem, direction, speed, disatance, step) {
     }
   }, speed);
 }
+
 let button1 = document.getElementById("right1");
-button1.onclick = function () {
+
+button1.onclick =  ()=> {
+  
   var con = document.getElementById("filtered_value");
   slideScroll(con, "right", 0, 1202, 9);
-};
+}
+
 let back1 = document.getElementById("left1");
-back1.onclick = function () {
+back1.onclick =   ()=> {
   var con = document.getElementById("filtered_value");
   slideScroll(con, "left", 0, 1202, 9);
-};
+}
 
 let arrivals_arr;
 let arrivals_data = async () => {
@@ -204,6 +214,15 @@ let arrivals_data = async () => {
   arrivals_arr = x;
   natori();
 };
+document.getElementById("natori").addEventListener("click", () => {
+  natori();
+});
+document.getElementById("asos").addEventListener("click", () => {
+  asos();
+});
+document.getElementById("skims").addEventListener("click", () => {
+  skims();
+});
 
 let natori = () => {
   let x = arrivals_arr;
@@ -229,7 +248,6 @@ let filterData = (n, x) => {
   let box = document.getElementById("filtered_value");
   appendData(s, box);
 };
-
 
 let array = [
   "./images/4th.png",
@@ -284,18 +302,18 @@ let array1 = [
   },
 ];
 
-let shop_by_categ=(data)=>{
-  let box=document.querySelector("#box13>div");
-  data.forEach((element)=>{
-    let div=document.createElement("div");
-    let img=document.createElement("img");
-    img.src=element.image;
-    let h2=document.createElement("h3");
-    h2.innerText=element.name;
-    div.append(img,h2);
+let shop_by_categ = (data) => {
+  let box = document.querySelector("#box13>div");
+  data.forEach((element) => {
+    let div = document.createElement("div");
+    let img = document.createElement("img");
+    img.src = element.image;
+    let h2 = document.createElement("h3");
+    h2.innerText = element.name;
+    div.append(img, h2);
     box.append(div);
-  })
-}
+  });
+};
 
 let display = () => {
   greatDeal();
@@ -304,7 +322,7 @@ let display = () => {
   shop_by_categ(array1);
   tranding();
   fvt_images();
-
 };
 
 display();
+

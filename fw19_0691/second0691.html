@@ -184,17 +184,12 @@
 
 <script src="second0691.js"></script>
 
-<script type="module">
-  import { footer, header } from "../header_footer/footer_header.js";
-  document.getElementById("footer1").innerHTML = footer();
-  document.getElementById("header1").innerHTML = header();
-  let userls = JSON.parse(localStorage.getItem("users"))
-let logged = JSON.parse(localStorage.getItem("isLogged")) || false;
-if(logged){
-  document.getElementById("login_check").innerText = userls[userls.length-1].name
-}
+<script>
+
+
+
 </script>
 
 <script src="../header_footer/header.js"></script>
+<script src="../homepage/homepage_import.js" type="module"></script>
 
-<!-- <script src="../header_footer.js" type="module"></script> -->
