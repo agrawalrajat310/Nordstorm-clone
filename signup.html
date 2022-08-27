@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UP</title>
+    <link rel="stylesheet" href="./header_footer/footer.css">
+    <link rel="stylesheet" href="./header_footer/header.css">
+    <style>
+        
+        #main_container{
+            width: 350px;
+            margin: auto;
+
+            margin-top: 60px;
+            height: 400px;
+            margin-bottom: 100px;
+
+
+        }
+
+      
+
+
+        #email,#name,#password {
+            width: 70%;
+            padding: 8px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #logup {
+            width: 75%;
+            padding: 8px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            margin-top: 20px;
+
+
+        }
+
+      
+.name_email_password{
+    margin-bottom: -10px;
+}
+#sigin{
+    width: 75%;
+            margin-top: 20px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div id="header1"></div>    
+    
+      <div id="main_container">
+        <h1>Sign Up</h1>
+        <h3 class="name_email_password">Name:</h3>
+        <input type="text" id="name" placeholder="name">
+        <h3 class="name_email_password">Email:</h3>
+        <input type="email" id="email" placeholder="email">
+        <h3 class="name_email_password">Password:</h3>
+        <input type="password" id="password" placeholder="password">
+       <br>
+        <button id="logup">Sign Up</button>
+        <p id="sigin">By tapping next you agree to <span>Privay Policy</span> and <span>Terms &
+            condition.</span>
+        <a href="signIn.html">Sign In</a>
+        </p>
+      </div>
+
+    <div id="footer1"></div>
+    
+</body>
+
+</html>
+<script src="./header_footer/header.js"></script>
+
+<script type="module" >
+    import {footer, header} from "./header_footer/footer_header.js"
+document.getElementById("footer1").innerHTML=footer();
+document.getElementById("header1").innerHTML=header();
+
+
+
+
+let user_arr = JSON.parse(localStorage.getItem("users")) || []
+
+document.getElementById("logup").addEventListener("click", ()=>{
+     let user_obj= {
+        name :document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        password: document.getElementById("password").value,
+     };
+     document.getElementById("name").value = ""
+     document.getElementById("email").value = ""
+     document.getElementById("password").value = ""
+     if(checkEmails(user_obj.email)===true){
+        user_arr.push(user_obj)
+        localStorage.setItem("users", JSON.stringify(user_arr));
+        alert("SignUP Successfully !")
+        //window.location.href = "./index.html"
+     }else{
+        alert("User already exist")
+     }
+     
+});
+
+function checkEmails(email){
+    let checked = user_arr.filter((el)=>{
+        return email ===el.email;
+    });
+    if(checked.length>0) return false
+    else return true
+}
+</script>
