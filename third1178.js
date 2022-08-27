@@ -111,7 +111,7 @@ function closeing(){
         }
         cart_arr.push(cart_obj);
        localStorage.setItem(("cart"), JSON.stringify(cart_arr));
-       //window.location.href =
+       window.location.href ="checkout.html"
     }else{
         alert("Please login")
         window.location.href = "./signIn.html"
