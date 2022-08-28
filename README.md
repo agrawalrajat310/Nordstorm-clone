@@ -30,7 +30,12 @@
 
 9. User should be able to go to payments page and place their order.                                                   
                                                          
-                                                         
+         
+         
+         
+ ## Deployed link - 
+ https://taupe-meerkat-1d1e69.netlify.app/index.html
+         
                                                          
 ## For Feedback :-
 
