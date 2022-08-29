@@ -6,6 +6,24 @@ let divone = document.getElementById("divone");
 
 let main = document.getElementById("main");
 
+
+
+function hightolow(){
+  datals.sort((a,b)=>{
+    return +a.price -  +b.price
+  })
+  display(datals)
+}
+let lowtohight=()=>{
+datals.sort((a,b)=>{
+  return +b.price - +a.price
+})
+display(datals)
+}
+
+
+
+
 function display(data) {
   main.innerHTML = null;
 

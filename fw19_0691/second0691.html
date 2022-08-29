@@ -99,6 +99,23 @@
       /* .sdivs + hr {
         padding-bottom: 150px;
       } */
+      #high,
+      #low {
+        width: 80%;
+        border: 0.5px solid gray;
+        font-weight: 400;
+        line-height: 18px;
+        color: #393939;
+        font-size: 17px;
+        font-style: normal;
+        padding: 8px;
+        font-family: "brandon text";
+        margin: 3px;
+      }
+      #high:hover,
+      #low:hover {
+        background-color: aquamarine;
+      }
     </style>
   </head>
   <body>
@@ -108,6 +125,11 @@
       <div id="divone">
         <div id="smalldivs">
           <div class="sdivs">
+            <hr />
+            <div>
+              <button onclick="hightolow()" id="high">High to low</button>
+              <button onclick="lowtohight()" id="low">Low to High</button>
+            </div>
             <hr />
             <div>
               <h3>Size +</h3>
